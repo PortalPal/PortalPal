@@ -17,7 +17,7 @@ const verData = require("./ext/data.json");
   fs.writeFileSync(`./ext/data.json`, JSON.stringify(verData, null, 2));
 })();
 
-const client = new Eris(process.env.DEV_TOKEN, {
+const client = new Eris(process.env.TOKEN, {
   options: {
     intents: [
       "all"

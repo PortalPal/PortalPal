@@ -30,7 +30,7 @@ const account = mongoose.model("Account", accountSchema);
 
 mongoose.set("strictQuery", true);
 
-mongoose.connect(process.env.DEV_DB_URL)
+mongoose.connect(process.env.DB_URL)
   .catch((error) => {
     console.error(error);
     process.exit(1);
